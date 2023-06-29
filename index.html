@@ -13,24 +13,53 @@
 <style> 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color:#bcd0c4;
+    background-color:#d0d2d1;
     padding-left: 2px;
     padding-right: 2px;
 
 }
+
 .header-image{
     width: 100%;
     opacity: 0.8;
-    margin-top: 30px
+    margin-top: 30px;
+
+}
+
+@keyframes SlideIn{
+    from{
+        transform: translateX(-800px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 .headline{
-    color:#2b5d5d;
-    font-size: 40px;
-    margin-top: 30px;
-    padding-left: 20px
+    color:#bbbbbb;
+    font-size: 70px;
+    margin-top: 40px;
+    padding-left: 20px;
+    position: absolute;
+    left: 50px;
+    top: 180px;
+    text-shadow: 1.5px 1.5px rgba(65, 65, 65, 0.5);
+    animation-name: SlideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
 }
 .body-text{
-    padding-left: 20px
+    padding-left: 70px;
+    padding-right:70px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 30px;
+
 }
 .navigation{
     display: flex;
@@ -73,7 +102,7 @@ a:hover{
 .bodytext-container{
     font-size: large;
     margin-top: 8px;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .image-container2{
@@ -99,7 +128,8 @@ a:hover{
 .bodytext-container2{
     font-size: large;
     margin-top: 8px;
-    line-height: 20px;
+    line-height: 30px;
+    padding-right: 25px
 }
 
 .image-container3{
@@ -125,59 +155,31 @@ a:hover{
 .bodytext-container3{
     font-size: large;
     margin-top: 8px;
-    line-height: 20px;
+    line-height: 30px;
 }
 
-.subheadline{
-    font-size: 40px;
-    color: #2b5d5d;
-}
-.body-text2{
-    font-size: 20px;
-}
-.color-container{
-    display:flex;
-    justify-content:space-between;
-    padding: 20px;
-    background-color: #bcd0c4;
-}
-.image-color{
-    width: 50%;
-}
-
-.colortext-container{
-    width: 50%;
-    font-size: 30px;
-    padding-left: 30px;
-    padding-right: 20px;
-    margin-top: 12px
-}
-.colorbodytext-container{
-    font-size: 18px;
-    margin-top: 8px;
-    line-height: 20px;
-    padding-right: 20px;
-}
 </style>
 
 </head>
 
 <body>
+    
     <div class="navigation">
         <div>
-            <a href="#">Wohnzimmer</a>
-            <a href="#">Schlafzimmer</a>
-            <a href="#">Esszimmer</a>
-            <a href="#">Büro</a>
+            <a href="#">Home</a>
+            <a href="inspiration.html">Inspiration</a>
+            <a href="#">Wunschliste</a>
+            <a href="#">Über mich</a>
           </div>
         </div>
    
     <img class="header-image" src="header.jpg">
    
+    
     <h1 class="headline">
         Gestalte dein zu Hause
     </h1>
-
+    
     <p class="body-text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda in reprehenderit quis facere asperiores consequatur quos eum minima iusto pariatur molestiae mollitia nulla magni ullam, rerum voluptas qui id expedita. 
     </p>
@@ -216,23 +218,6 @@ a:hover{
 
     </div>
 <hr />
-    <h2 class="subheadline">
-        Farbpaletten
-    </h2>
-        <p class="body-text2">
-            Einige Farben eignen sich besonders gut, um sie miteinander zu kombinieren und ein harmonisches Gesamtkonzept zu erreichen.
-        </p>
-
-        <div class="color-container">
-            <div class="colortext-container">
-                Beige/Holz und Grüntöne/Pflanzen
-                <div class="colorbodytext-container">
-                    Der Einsatz von Naturtönen ist immer eine einfache, unkomplizierte und neutrale Möglichkeit zu weißen Tönen.
-                </div>
-            </div>
-            <img class="image-color" src="A4 - 2.jpg">
-                
-        </div>
         
 </body>
 
