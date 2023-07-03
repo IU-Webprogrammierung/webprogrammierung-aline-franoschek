@@ -11,18 +11,37 @@
 
 </head>
 <style>
-    body{
+body{
     font-family: 'Montserrat', sans-serif;
     background-color:#ffffff;
     padding-left: 2px;
     padding-right: 2px;
 
 }
-    .subheadline{
-    font-size: 40px;
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 80px
+}
+a{
+    color:darkslategray;
+    text-decoration:none;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size:30px
+
+}
+a:hover{
+    text-decoration:underline;
+}
+
+.subheadline{
+    font-size: 30px;
     color: #2b5d5d;
     padding-left:60px;
-    margin-top:60px
+    margin-top:100px
     
 }
 .body-text2{
@@ -36,11 +55,23 @@
     display:flex;
     justify-content:space-between;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #e7f0e7;
+
 }
-.image-color{
-    width: 50%;
+
+.slide-images{
+    width: 320px;
+    height: 250px;
+    display:flex;
 }
+
+.slide-images:hover{
+    width: 320px;
+    height: 250px;
+    display:flex;
+}
+
+
 
 .colortext-container{
     width: 50%;
@@ -60,7 +91,7 @@
     display:flex;
     justify-content:space-between;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #e3eef0;
 }
 .image-color2{
     width: 50%;
@@ -83,7 +114,7 @@
     display:flex;
     justify-content:space-between;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 .image-color3{
     width: 50%;
@@ -106,7 +137,7 @@
     display:flex;
     justify-content:space-between;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #edf7fb;
 }
 .image-color4{
     width: 50%;
@@ -127,6 +158,16 @@
 }
 </style>
 <body>
+
+    <div class="navigation">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="inspiration.html">Inspiration</a>
+            <a href="wunschliste.html">Wunschliste</a>
+            <a href="#">Über mich</a>
+          </div>
+        </div>
+
      <h2 class="subheadline">
         Farbpaletten
     </h2>
@@ -141,8 +182,15 @@
                     Der Einsatz von Naturtönen ist immer eine einfache, unkomplizierte und neutrale Möglichkeit zu weißen Tönen.
                 </div>
             </div>
-            <img class="image-color" src="A4 - 2.jpg">
+
+                <div class="slide-images">
+                        <img src="A4 - 2.jpg">      
+                </div> 
+                <div class="slide-images">
+                    <img src="interior-natural.jpeg">
+                </div>
                 
+             
         </div>
     <hr />
     <div class="color-container2">
