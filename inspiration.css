@@ -1,0 +1,145 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 80px
+}
+a{
+    color:darkslategray;
+    text-decoration:none;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size:30px
+
+}
+a:hover{
+    text-decoration:underline;
+}
+
+.subheadline{
+    font-size: 30px;
+    color: #2b5d5d;
+    padding-left:60px;
+    margin-top:100px
+    
+}
+.body-text2{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left:60px;
+
+    
+}
+.color-container{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px;
+    background-color: #e7f0e7;
+
+}
+
+.slide-images{
+    width: 320px;
+    height: 250px;
+    display:flex;
+}
+
+.slide-images:hover{
+    width: 320px;
+    height: 250px;
+    display:flex;
+}
+
+
+
+.colortext-container{
+    width: 50%;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 12px
+}
+.colorbodytext-container{
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 20px;
+    padding-right: 20px;
+}
+
+.color-container2{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px;
+    background-color: #e3eef0;
+}
+.image-color2{
+    width: 50%;
+}
+
+.colortext-container2{
+    width: 50%;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 12px
+}
+.colorbodytext-container2{
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 20px;
+    padding-right: 20px;
+}
+.color-container3{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+.image-color3{
+    width: 50%;
+}
+
+.colortext-container3{
+    width: 50%;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 12px
+}
+.colorbodytext-container3{
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 20px;
+    padding-right: 20px;
+}
+.color-container4{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px;
+    background-color: #edf7fb;
+}
+.image-color4{
+    width: 50%;
+}
+
+.colortext-container4{
+    width: 50%;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 12px
+}
+.colorbodytext-container4{
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 20px;
+    padding-right: 20px;
+}
