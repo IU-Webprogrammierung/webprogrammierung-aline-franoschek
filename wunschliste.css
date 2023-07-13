@@ -64,12 +64,6 @@ nav ul a{
 nav input[type="checkbox"]{
     display: none;
 }
-.expandable_li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 .toggle-button{
     width: 30px;
     height: 23px;
@@ -88,7 +82,7 @@ nav input[type="checkbox"]{
 }
 @media(max-width: 1080px){
     .toggle-button{
-        display: flex;
+        display:flex;
     }
     nav ul{
         height: min-content;
@@ -105,20 +99,12 @@ nav input[type="checkbox"]{
     nav ul a{
         padding: 30px 0;
     }
-    .expandable_li{
-        display: block;
-    }
-    .expandable_li label{
-        padding: 30px 0;
-        cursor: pointer;
-        display: block;
-    }
+
     #toggle-button:checked ~ ul{
         display: block;
         overflow: hidden;
     }
 }
-
 .subheadline{
     margin-top: 100px;;
     margin-bottom: 60px;
@@ -126,12 +112,10 @@ nav input[type="checkbox"]{
     font-size: 30px;
     color: var(--background-color);
 }
-
 .grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
-
 .image-box{
     position: relative;
     overflow: hidden;
@@ -144,7 +128,6 @@ nav input[type="checkbox"]{
     object-fit: cover;
     object-position: center;
 }
-
 .image-box > .box-text{
     position: absolute;
     inset: 0;
@@ -156,7 +139,6 @@ nav input[type="checkbox"]{
     align-items: center;
     color: var(--darker-background-color);
 }
-
 .image-box > img,
 .image-box > .box-text{
     transition: 200ms ease-in-out;
