@@ -76,31 +76,6 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
-
-@media(max-width: 1080px){
-    .toggle-button{
-        display: flex;
-    }
-    nav ul{
-        height: min-content;
-        width: 100%;
-        background: var(--background-color);
-        display: none;
-        position: absolute;
-        top: 80px;
-    }
-    nav li{
-        height: min-content;
-        width: 100%;
-    }
-    nav ul a{
-        padding: 30px 0;
-    }
-    #toggle-button:checked ~ ul{
-        display: block;
-        overflow: hidden;
-    }
-}
 header{
     width: 100vw;
     height: 100vh;
@@ -109,7 +84,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    align-items: center;
+
 }
 header .container{
     height: 80%;
@@ -249,6 +224,28 @@ p1{
 
 
 @media(max-width: 1080px){
+    .toggle-button{
+        display: flex;
+    }
+    nav ul{
+        height: min-content;
+        width: 100%;
+        background: var(--background-color);
+        display: none;
+        position: absolute;
+        top: 80px;
+    }
+    nav li{
+        height: min-content;
+        width: 100%;
+    }
+    nav ul a{
+        padding: 30px 0;
+    }
+    #toggle-button:checked ~ ul{
+        display: block;
+        overflow: hidden;
+    }
     .navbar{
         display: flex;
     }
@@ -277,4 +274,5 @@ p1{
         min-width: 30px;
         align-items: center;
     }
+
 }
