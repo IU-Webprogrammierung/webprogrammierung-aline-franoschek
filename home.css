@@ -137,15 +137,21 @@ section{
     font-size: 18px;
     color: var(--background-color);
 }
+.line{
+    width: 450px;
+    height: 4px;
+    background: var(--background-color);
+    margin: 10px auto;
+}
 .row{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
-.row .box img{
+.box img{
     width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +160,7 @@ section{
     margin-top: 50px;
 }
 h2{
-    font-size: 26px;
+    font-size: 40px;
     color: var(--darker-background-color);
     margin: 18px;
 }
@@ -178,8 +184,7 @@ p1{
     color: var(--text-color);
     font-size: 18px;
     cursor: pointer;
-    transition: 0.3s;
-    
+    transition: 0.3s;  
 }
 .box button:hover{
     background-color: var(--background-color);
@@ -198,10 +203,9 @@ p1{
     width: 60%;
     padding: 80px;
     color: var(--darker-background-color);
-    
 }
 .innendesign-content h2{
-    font-size: 40px;
+    font-size: 50px;
     margin: 50px;
 }
 .innendesign-content p1{
@@ -221,7 +225,6 @@ p1{
     width: 300px;
     margin: 10px;
 }
-
 
 @media(max-width: 1080px){
     .toggle-button{
@@ -264,9 +267,9 @@ p1{
     .header-container p{
         text-align: center;
     }
-    .header-container .button{
-        text-align: center;
-        padding-left: 200px;
+    .header-container button{
+        padding-left: 20px;
+        margin-left: 80px;
     }
     .row{
         display:grid;
