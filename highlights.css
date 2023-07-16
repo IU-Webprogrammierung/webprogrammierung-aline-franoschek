@@ -19,6 +19,13 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
 }
+p{
+    color: var(--darker-background-color);
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 html{
     height: 100%;
 }
@@ -47,7 +54,6 @@ nav ul{
 nav li{
     height: 100%;
     width: 200px;
-    padding-right: 30px;
     text-align: center;
 }
 nav li:hover{
@@ -115,6 +121,7 @@ nav input[type="checkbox"]{
 .grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    margin-top: 40px;
 }
 .image-box{
     position: relative;
