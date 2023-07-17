@@ -1,10 +1,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
-    height: 100%;
+    background: var(--text-color)
 }
 
 :root{
@@ -85,28 +83,6 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
-button{
-    padding: 0.7rem 1.3rem;
-    padding-left: 30px;
-    margin-top: 20px;
-    margin-left: 50px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background: var(--background-color);
-    color: var(--text-color);
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s; 
-}
-button:hover{
-    background: var(--accent-color)
-}
-button a{
-    text-decoration: none;
-    font-size: 18px;   
-}
-
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -114,54 +90,91 @@ h2{
     padding-left:60px;
     margin-top:100px;
     margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h3{
-    text-align: center;
-    color: #243848;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: var(--background-color);
+    padding-left:60px;
+    margin-top:30px;
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.533));
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    5%,40%,80%{
+        color: #ff9244;
+    }
+    20%,60%,100%{
+        color: #676e69;
+        text-shadow: 0 0 10px #8a988c,
+        0 0 20px #8a988c,
+        0 0 40px #8a988c,
+        0 0 80px #8a988c,
+        0 0 160px #8a988c,
+    }
+}
+.body-text{
+    padding-left: 60px;
+    padding-right: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--darker-background-color);
 }
 p{
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--darker-background-color);
-    padding-left: 50px;
+    padding-left: 60px;
     padding-right: 50px;
-}
-.row{
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-}
-.row-box{
-    flex-basis: 30%;
-    background: #f1f1f1;
-    border-radius: 10px;
-    margin-bottom: 60px;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    margin-left: 60px;
-    margin-right: 60px;
-    transition: 0.5s;
-}
-.row-box:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-.image-container{
-    display:flex;
-    justify-content:space-between;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 35px
-}
-.image-frames{
-    width: 50%;
-}
-.bodytext-container{
-    font-size: large;
-    margin-top: 8px;
     line-height: 30px;
-    padding-right: 25px;
-    padding-left: 15px;
-    color: #4b5450;
+    font-size: 18px;
+    color: var(--darker-background-color);
+}
+details{
+    width: 70%;
+    background: #fbfbfb;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+summary{
+    padding: 5px;
+    display: block;
+    background: #f1f1f1;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+    color: var(--darker-background-color);
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+details:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.279);
+}
+summary:before{
+    content:normal;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f1f1f1;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transform: rotate(0);
+    transform-origin: 0.2rem 50%;
+    transition: 0.25s;
+    transform: ease;
+}
+details[open] > summary:before{
+    transform: rotate(90deg);
+}
+details summary::-webkit-details-marker{
+    display:flexbox;
 }
 .footer{
     font-size: 15px;
@@ -193,7 +206,5 @@ p{
         display: block;
         overflow: hidden;
     }
-    .row{
-        flex-direction: column;
-    }
 }
+

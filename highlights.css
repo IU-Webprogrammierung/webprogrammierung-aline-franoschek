@@ -1,16 +1,18 @@
 body{
-    margin: 0;
-    margin-bottom: 20px;
-    background-color:#ffffff;
-    padding-left: 2px;
-    padding-right: 2px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
     height: 100%;
 }
+
 :root{
     --background-color: #4b5450;
     --darker-background-color: #243848;
     --accent-color: #8a988c;
     --text-color: #ffffff;
+    
 }
 *{
     margin: 0;
@@ -18,13 +20,10 @@ body{
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
-}
-p{
-    color: var(--darker-background-color);
-    font-size: 18px;
-    line-height: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 html{
     height: 100%;
@@ -86,37 +85,20 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
-@media(max-width: 1080px){
-    .toggle-button{
-        display:flex;
-    }
-    nav ul{
-        height: min-content;
-        width: 100%;
-        background: var(--background-color);
-        display: none;
-        position: absolute;
-        top: 80px;
-    }
-    nav li{
-        height: min-content;
-        width: 100%;
-    }
-    nav ul a{
-        padding: 30px 0;
-    }
-
-    #toggle-button:checked ~ ul{
-        display: block;
-        overflow: hidden;
-    }
-}
-.subheadline{
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 100px;;
     margin-bottom: 60px;
     padding-left: 50px;
-    font-size: 30px;
+    font-size: 40px;
     color: var(--background-color);
+}
+p{
+    padding-left: 60px;
+    padding-right: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--darker-background-color);
 }
 .grid{
     display:grid;
@@ -127,7 +109,6 @@ nav input[type="checkbox"]{
     position: relative;
     overflow: hidden;
 }
-
 .image-box > img{
     display:block;
     width: 100%;
@@ -150,30 +131,24 @@ nav input[type="checkbox"]{
 .image-box > .box-text{
     transition: 200ms ease-in-out;
 }
-
 .image-box:hover > img.blur{
     filter: blur(15px);
 }
-
 .image-box > .box-text.fade{
     opacity: 0;
 }
-
 .image-box:hover > .box-text.fade{
     opacity: 1;
 }
-
 
 .grid2{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
-
 .image-box2{
     position: relative;
     overflow: hidden;
 }
-
 .image-box2 > img{
     display:block;
     width: 100%;
@@ -181,7 +156,6 @@ nav input[type="checkbox"]{
     object-fit: cover;
     object-position: center;
 }
-
 .image-box2 > .box-text2{
     position: absolute;
     inset: 0;
@@ -193,20 +167,16 @@ nav input[type="checkbox"]{
     align-items: center;
     color: var(--darker-background-color);
 }
-
 .image-box2 > img,
 .image-box2 > .box-text2{
     transition: 200ms ease-in-out;
 }
-
 .image-box2:hover > img.blur{
     filter: blur(15px);
 }
-
 .image-box2 > .box-text2.fade{
     opacity: 0;
 }
-
 .image-box2:hover > .box-text2.fade{
     opacity: 1;
 }
@@ -215,12 +185,10 @@ nav input[type="checkbox"]{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
-
 .image-box3{
     position: relative;
     overflow: hidden;
 }
-
 .image-box3 > img{
     display:block;
     width: 100%;
@@ -228,7 +196,6 @@ nav input[type="checkbox"]{
     object-fit: cover;
     object-position: center;
 }
-
 .image-box3 > .box-text3{
     position: absolute;
     inset: 0;
@@ -240,40 +207,59 @@ nav input[type="checkbox"]{
     align-items: center;
     color: var(--darker-background-color);
 }
-
 .image-box3 > img,
 .image-box3 > .box-text3{
     transition: 200ms ease-in-out;
 }
-
 .image-box3:hover > img.blur{
     filter: blur(15px);
 }
-
 .image-box3 > .box-text3.fade{
     opacity: 0;
 }
-
-.image-box3:hover > .box-text3.fade{
+.image-box3:hover > .box-text3.blur{
     opacity: 1;
+}
+.footer{
+    font-size: 15px;
+    color: var(--darker-background-color);
+    margin-bottom: 55px;
+    margin-top: 55px;
+    padding-left: 25px;
 }
 
 @media screen and (max-width: 500px){
     .image-box{
         flex: 50%;
     }
-}
-
-@media screen and (max-width: 500px){
     .navigation{
         position:relative;
     }
 }
-
-.footer{
-    font-size: 15px;
-    color: var(--darker-background-color);
-    margin-bottom: 55px;
-    margin-top: 35px;
-    padding-left: 15px;
+@media(max-width: 1080px){
+    .toggle-button{
+        display: flex;
+    }
+    nav ul{
+        height: min-content;
+        width: 100%;
+        background: var(--background-color);
+        display: none;
+        position: absolute;
+        top: 80px;
+    }
+    nav li{
+        height: min-content;
+        width: 100%;
+    }
+    nav ul a{
+        padding: 30px 0;
+    }
+    #toggle-button:checked ~ ul{
+        display: block;
+        overflow: hidden;
+    }
 }
+
+
+
