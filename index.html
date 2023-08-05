@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlinesWebsite</title>
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+<!--Hier beginnt das Menü-->
+    <nav>
+            <svg id="logo" width="534" height="302" viewBox="0 0 534 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 281.435V2L87.536 127.642L175.072 2C175.072 2 237.098 155.794 266.61 155.794C296.123 155.794 291.121 92.7121 316.131 99.4895C341.141 106.267 335.639 144.846 373.655 140.154C411.671 135.462 294.122 2 373.655 2H489.203C530.72 2 475.197 252.24 441.183 281.435C407.169 310.63 371.532 304.217 360.65 281.435C344.212 247.024 357.106 188.063 316.131 199.586C275.156 211.109 321.44 266.967 266.61 281.435C184.82 303.017 175.072 2 175.072 2V281.435H109.545V199.586L87.536 226.174L66.027 199.586V281.435H1Z" fill="url(#paint0_linear_111_13)"/>
+            <path d="M175.072 2L87.536 127.642L1 2V281.435H66.027V199.586L87.536 226.174L109.545 199.586V281.435H175.072V2ZM175.072 2C175.072 2 184.82 303.017 266.61 281.435C321.44 266.967 275.156 211.109 316.131 199.586C357.106 188.063 344.212 247.024 360.65 281.435C371.532 304.217 407.169 310.63 441.183 281.435C475.197 252.24 530.72 2 489.203 2C447.686 2 453.188 2 373.655 2C294.122 2 411.671 135.462 373.655 140.154C335.639 144.846 341.141 106.267 316.131 99.4895C291.121 92.7121 296.123 155.794 266.61 155.794C237.098 155.794 175.072 2 175.072 2Z" stroke="white"/>
+            <circle cx="504" cy="258" r="30" fill="#FF7A00"/>
+            <defs>
+            <linearGradient id="paint0_linear_111_13" x1="252.5" y1="2" x2="252.5" y2="301" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            <a id="name" href="#">meine.website</a>
+            <input type="checkbox" id="toggle-button">
+            <label for="toggle-button" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a href="highlights.html">Highlights</a></li>
+                <li><a href="tipps.html">Tipps</a></li>
+            </ul>
+        </nav>
+<!--Header Startseite-->
+        <header>
+            <div id="container">
+                <div id="header-container">
+                    <h1>Gestalte dein Zuhause</h1>
+                    <p>
+                        Finde deinen persönlichen Einrichtungsstil <br> Lass dich inspirieren oder erhalte hilfreiche Tipps zur Umsetzung! 
+                    </p>
+                    <button id="color_mode_button">Drück mich</button>
+                </div>
+            </div>
+        </header>
+        <a href="https://unsplash.com/de/fotos/NxAwryAbtIw"><p>Bildquelle: unsplash.com</p></a>
+<!--Beginn Body Bereich-->
+       <section id="stil">
+        <div id="title">
+            <h2>Wo ist dein Zuhause?</h2>
+            <p1>Ob auf dem Land oder in der Stadt dein Zu Hause ist dein Rückzugsort. Dein Ort zum entspannen und der Erholung. Der geographische Ort deines Zu Hauses kann unterschiedliche Einflüsse auf deinen Einrichtungsstil haben.</p1>
+            <div id="line"></div>
+        </div>
+        <div id="row">
+            <div class="box">
+                <picture>
+                    <source
+                        media="(min-width:480px)"
+                        srcset="
+                                ./Images/image-country-large.jpg 1024w,
+                                ./Images/image-country-medium.jpg 768w,
+                                ./Images/image-country-small.jpg 480w"
+                    />
+                <img class="image-frames" src="./Images/image-country.jpg">
+            </picture>
+                <h4>Zu Hause auf dem Land</h4>
+                <p1>Helle Farben und die Verbundenheit zur Natur prägen diesen Stil</p1>
+                <button>Mehr erfahren</button>
+            </div>
+            <div class="box">
+                <picture>
+                    <source
+                        media="(min-width:480px)"
+                        srcset="
+                                ./Images/image-city-large.jpg 1024w,
+                                ./Images/image-city-medium.jpg 768w,
+                                ./Images/image-city-small.jpg 480w"
+                    />
+                <img class="image-frames" src="./Images/image-city.jpg">
+                </picture>
+                <h4>Zu Hause in der Stadt</h4>
+                <p1>Praktisch, Modern und strukturiert...</p1>
+                <button>Mehr erfahren</button>
+            </div>
+        </div>
+       </section>
+    
+       <section id="banner">
+            <div id="banner-content">
+            <h2>Wohlfühlen...</h2>
+            <p1>...Zu Hause ist wo die Liebe wohnt, Erinnerungen geboren werden, Freunde immer Willkommen sind, wo das Leben tanzen lernt und jederzeit ein Lächeln auf Dich wartet. </p1>
+            </div>
+       </section>
+    
+       <section class="designer">
+            <dic class="row">
+                <div class="box">
+                    <h2>Innendesigner</h2>
+                    <p1>Zu den erfolgreisten Innendesigner gehören Kelly Hoppen, Alessandra Branca, Alyssa Kapito, Jean-Louis Deniot und viele mehr. Es folgen Beipiele, die sich am Stil dieser Innendesigner orientieren.</p1>
+                </div> 
+                        <div class="boxes">
+                            <div class="image-boxes">
+                                <img src="./Images/image-box1.jpg">
+                                <img src="./Images/image-box2.jpg">
+                                <img src="./Images/image-box3.jpg">
+                                <img src="./Images/image-box4.jpg">
+                            </div>
+                        </div>
+            </dic>
+       </section>
+<!--Footer-->
+<footer class="footer">
+    Aline Franoschek 2023
+</footer>
+</body>
+</html>

@@ -1,16 +1,8 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    align-items: center;
-    background: var(--text-color)
-}
-
 :root{
     --background-color: #4b5450;
     --darker-background-color: #243848;
     --accent-color: #8a988c;
     --text-color: #ffffff;
-    
 }
 *{
     margin: 0;
@@ -21,7 +13,44 @@ body{
     box-sizing:border-box;
     margin: 0;
     padding: 0;
-    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background: var(--text-color)
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: var(--background-color);
+    padding-left:60px;
+    margin-top:100px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: var(--background-color);
+    padding-left:60px;
+    margin-top:30px;
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.533));
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+p{
+    padding-left: 60px;
+    padding-right: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--darker-background-color);
 }
 html{
     height: 100%;
@@ -34,6 +63,10 @@ nav{
     align-items: center;
 }
 nav .logo{
+    margin-left: 20px;
+    width: 4.5rem;  
+}
+nav .name{
     margin-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
@@ -83,31 +116,6 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
-h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    color: var(--background-color);
-    padding-left:60px;
-    margin-top:100px;
-    margin-bottom: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    color: var(--background-color);
-    padding-left:60px;
-    margin-top:30px;
-    margin-bottom: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.533));
-    line-height: 0.70em;
-    outline: none;
-    animation: animate 5s linear infinite;
-}
 @keyframes animate{
     5%,40%,80%{
         color: #ff9244;
@@ -122,13 +130,6 @@ h3{
     }
 }
 .body-text{
-    padding-left: 60px;
-    padding-right: 50px;
-    line-height: 30px;
-    font-size: 18px;
-    color: var(--darker-background-color);
-}
-p{
     padding-left: 60px;
     padding-right: 50px;
     line-height: 30px;

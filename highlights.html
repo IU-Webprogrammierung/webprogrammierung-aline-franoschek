@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wunschliste</title>
+    <title>Highlights</title>
     <link href="highlights.css" rel="stylesheet">
 </head>
 <body>
 <!--Hier beginnt das Menü-->
     <nav>
-        <a class="logo" href="#">meine.website</a>
+        <svg class="logo" width="534" height="302" viewBox="0 0 534 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 281.435V2L87.536 127.642L175.072 2C175.072 2 237.098 155.794 266.61 155.794C296.123 155.794 291.121 92.7121 316.131 99.4895C341.141 106.267 335.639 144.846 373.655 140.154C411.671 135.462 294.122 2 373.655 2H489.203C530.72 2 475.197 252.24 441.183 281.435C407.169 310.63 371.532 304.217 360.65 281.435C344.212 247.024 357.106 188.063 316.131 199.586C275.156 211.109 321.44 266.967 266.61 281.435C184.82 303.017 175.072 2 175.072 2V281.435H109.545V199.586L87.536 226.174L66.027 199.586V281.435H1Z" fill="url(#paint0_linear_111_13)"/>
+            <path d="M175.072 2L87.536 127.642L1 2V281.435H66.027V199.586L87.536 226.174L109.545 199.586V281.435H175.072V2ZM175.072 2C175.072 2 184.82 303.017 266.61 281.435C321.44 266.967 275.156 211.109 316.131 199.586C357.106 188.063 344.212 247.024 360.65 281.435C371.532 304.217 407.169 310.63 441.183 281.435C475.197 252.24 530.72 2 489.203 2C447.686 2 453.188 2 373.655 2C294.122 2 411.671 135.462 373.655 140.154C335.639 144.846 341.141 106.267 316.131 99.4895C291.121 92.7121 296.123 155.794 266.61 155.794C237.098 155.794 175.072 2 175.072 2Z" stroke="white"/>
+            <circle cx="504" cy="258" r="30" fill="#FF7A00"/>
+            <defs>
+            <linearGradient id="paint0_linear_111_13" x1="252.5" y1="2" x2="252.5" y2="301" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+        <a class="name" href="#">meine.website</a>
         <input type="checkbox" id="toggle-button">
         <label for="toggle-button" class="toggle-button">
             <span class="bar"></span>
@@ -18,7 +29,7 @@
             <span class="bar"></span>
         </label>
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="inspiration.html">Inspiration</a></li>
             <li><a href="highlights.html">Highlights</a></li>
             <li><a href="tipps.html">Tipps</a></li>
@@ -28,34 +39,44 @@
     <h2 class="subheadline">
        Highlights
    </h2>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae veritatis ab, numquam facilis atque cumque molestiae dolorum aut vero incidunt, earum ex magnam voluptates beatae nihil ducimus? Consequuntur, repudiandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste itaque corporis ipsam, voluptatibus suscipit beatae fugiat neque saepe quod alias consequatur minima veritatis modi? Corrupti itaque a sunt quaerat! Dicta?</p>
+   <p>Einige Möbelstücke oder Dekorationsartikel eignen sich besonders gut, um dem eigenen Zu Hause mehr Persönlichkeit und Charme zu verleihen. Mit nur ein paar Handgriffen und auch für kleines Geld, kann man viel bewirken. <br>
+        Nachfolgend sind ein paar Vorschläge, welche "Pieces" sich gut eignen um die eigenen vier Wände etwas aufzuwerten:</p>
 
 <div class="grid">
     <div class="image-box">
-        <img class="blur" src="./Images/image5.jpg">
+        <picture>
+            <source
+                media="(min-width:480px)"
+                srcset="
+                        ./Images/image-wallpapers-large.jpg 1024w,
+                        ./Images/image-wallpapers-medium.jpg 768w,
+                        ./Images/image-wallpapers-small.jpg 480w"
+            />
+        <img class="blur" src="./Images/image-wallpapers.jpg">
+        </picture>
         <div class="box-text fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+            Farbige oder gemusterte Tapeten sind ein echter Hungucker! Fototapeten können Räume optisch vergrößern und ein Raumgefühl erschaffen.
         </div>
     </div>
 
     <div class="image-box">
         <img class="blur" src="./Images/image7.jpg">
         <div class="box-text fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+            Große Sofas schaffen eine Gemütlichkeit im Raum und laden zum Entspannen ein. Außerdem sind sie ein Hingucker im Raum und können sich gut als nützliches Raumelement integrieren lassen.
         </div>
     </div>
 
     <div class="image-box">
         <img class="blur" src="./Images/image8.jpg">
         <div class="box-text fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+            Außergewöhnliche große Vasen und Deckosäulen können leere Ecken aufwerten. Vor allem der Einsatz von Vasen sind richtige Hingucker und können Tische oder Sideboards aufwerten. Ob leer, mit Ästen oder mit bunten Blumen verleihen sie dem Raum das gewisse Extra!
         </div>
     </div>
 
     <div class="image-box">
         <img class="blur" src="./Images/image9.jpg">
         <div class="box-text fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+            Große Bilder verleihen Gemütlichkeit und liefern eine Message. Sie helfen einzelne Abteile eines Raums zu strukturieren. Nicht nur an der Wand, sondern auch am Boden können sie überzeugen.
         </div>
     </div>
 
@@ -63,32 +84,32 @@
 
 <br/>
 
-<div class="grid2">
-    <div class="image-box2">
+<div class="grid">
+    <div class="image-box">
         <img class="blur" src="./Images/image10.jpg">
-        <div class="box-text2 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Bunte Türen oder Türrahmen sind nicht für Jedermann eine Option. Sie können jedoch einen Raum aufwerten und ein kleines Highlight sein. Besonders im Süden und in warem Ländern sind bunte Türen gang und gäbe.
         </div>
     </div>
 
-    <div class="image-box2">
+    <div class="image-box">
         <img class="blur" src="./Images/image11.jpg">
-        <div class="box-text2 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Deckenlampen und Licht allgmein schafft eine gewisse Atmosphäre im Raum und Gemütlichkeit. Ob schlicht oder ausgefallen ist Geschmackssache. Jedoch sind Lampen ein Muss für jedes Zu Hause.
         </div>
     </div>
 
-    <div class="image-box2">
+    <div class="image-box">
         <img class="blur" src="./Images/image12.jpg">
-        <div class="box-text2 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Bilder, Fotos oder Fotowände sind schöne Alternativen zu einer kahlen Wand. Dabei können abstrakte Bilder, Zeichnungen oder Erinnerungen aus dem Leben verwendet werden. Alles was man gerne sieht oder einem wichtig ist kann eingerahmt werden.
         </div>
     </div>
 
-    <div class="image-box2">
+    <div class="image-box">
         <img class="blur" src="./Images/image13.jpg">
-        <div class="box-text2 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Neon Lichter, -Tafeln oder -Schriftzüge verleihen einem Raum ein besonderes Licht. Meist sind diese Lichter bunt und rücken den entsprechenden Raum in ein ganz "neues Licht"
         </div>
     </div>
 
@@ -96,32 +117,32 @@
 
 <br/>
 
-<div class="grid3">
-    <div class="image-box3">
+<div class="grid">
+    <div class="image-box">
         <img class="blur" src="./Images/image14.jpg">
-        <div class="box-text3 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Ein großes gemütliches Bett und ein gut strukturiertes und aufgeräumtes Schlafzimmer verhelfen zu einem guten Schalf. Fast die Hälfte unserer Lebenzeit verbringen wir mit schlafen und aus diesem Grund sollte dies auch bedacht gestaltet werden. Denn wer besser schläft, hat auch mehr Energie für den Tag!
         </div>
     </div>
 
-    <div class="image-box3">
+    <div class="image-box">
         <img class="blur" src="./Images/image16.jpg">
-        <div class="box-text3 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Bücher-Wände und Lese-Ecken sind nicht nur ein echter Hingucker, sondern sagen auch viel über die Persönlichkeit und die Interessen eines Menschen aus. Wer viel und gerne liest, ist oftmals kreativer, intellektueller und kann sich gewählter ausdrücken. Bücher sind eine schöne Alternative, dem hektischen Alltag für ein paar Stunden zu entkommen.
         </div>
     </div>
 
-    <div class="image-box3">
+    <div class="image-box">
         <img class="blur" src="./Images/image-disco.jpg">
-        <div class="box-text3 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Ausgefallene Dekorationsartikel sind Eye-Catcher! Discokugeln in Kombination mit Sonne, verleihen dem Raum schöne Reflektionen und Lichtspiele. Natürlich können auch Mitbringsel aus dem Urlaub tolle Hingucker sein!
         </div>
     </div>
 
-    <div class="image-box3">
+    <div class="image-box">
         <img class="blur" src="./Images/image4.jpg">
-        <div class="box-text3 fade">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum omnis tempora cupiditate. Repudiandae neque excepturi explicabo nam eveniet, iusto ut, aperiam ad corrupti, doloribus culpa temporibus suscipit accusantium commodi placeat!
+        <div class="box-text fade">
+            Außergewöhnliche Stühle oder Vintage-Stühle sind eine schöne Alternative zu herkömmlichen Massenproduktionen. Jedes Teil kann seine eigene Geschichte erzählen und verleiht dem eigenen Zu Huase einen Charakter der viel zu bieten hat.
         </div>
     </div>
 
