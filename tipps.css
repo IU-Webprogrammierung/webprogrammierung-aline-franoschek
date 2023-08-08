@@ -62,12 +62,17 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav .logo{
+#logo_name{
+    height: 80px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+}
+nav #logo{
     margin-left: 20px;
     width: 4.5rem;  
 }
-nav .name{
-    margin-left: 30px;
+nav #name{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     font-variant: small-caps;
@@ -129,7 +134,7 @@ nav input[type="checkbox"]{
         0 0 160px #8a988c,
     }
 }
-.body-text{
+#body-text{
     padding-left: 60px;
     padding-right: 50px;
     line-height: 30px;
@@ -177,12 +182,13 @@ details[open] > summary:before{
 details summary::-webkit-details-marker{
     display:flexbox;
 }
-.footer{
+#footer{
     font-size: 15px;
     color: var(--darker-background-color);
     margin-bottom: 55px;
     margin-top: 55px;
     padding-left: 25px;
+    outline: thick ridge orangered;
 }
 @media(max-width: 1080px){
     .toggle-button{

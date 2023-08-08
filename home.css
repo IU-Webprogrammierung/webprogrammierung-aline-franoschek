@@ -5,10 +5,10 @@
     --text-color: #ffffff;
 }
 .color_mode{
-    --background-color:#4b4b4b;
-    --darker-background-color:#373737;
-    --accent-color:#f06e0a;
-    --text-color:#ffffff;
+    --background-color:#eca832;
+    --darker-background-color:#20201f;
+    --accent-color:#df4cac;
+    --text-color:#ededed;
 }
 *{
     margin: 0;
@@ -16,6 +16,7 @@
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
+    box-sizing: border-box;
 }
 
 h2{
@@ -31,7 +32,7 @@ h4{
 }
 p{
     font-size: 16px;
-    color: #4b5450;
+    color: var(--darker-background-color);
     padding-left: 10px;
 }
 p1{
@@ -49,13 +50,19 @@ nav{
     background: var(--background-color);
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+#logo_name{
+    height: 80px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
 }
 nav #logo{
     margin-left: 20px;
     width: 4.5rem;  
 }
 nav #name{
-    margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     font-variant:small-caps;
@@ -207,7 +214,6 @@ section{
 }
 .box{
     width: 50%;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -270,7 +276,7 @@ section{
     width: 300px;
     margin: 10px;
 }
-.footer{
+#footer{
     font-size: 15px;
     color: var(--darker-background-color);
     margin-bottom: 55px;
@@ -278,7 +284,6 @@ section{
     padding-left: 25px;
     outline: thick ridge orangered;
 }
-
 @media(max-width: 1080px){
     .toggle-button{
         display: flex;
@@ -305,13 +310,6 @@ section{
     .navbar{
         display: flex;
     }
-    header .container{
-        justify-content:center;
-    }
-    #header-container{
-        max-width: 400px;
-        align-items: flex-start;
-    }
     #header-container h1{
         text-align: center;
         width: 100%;
@@ -327,14 +325,6 @@ section{
     .image-frames{
         display:grid;
         grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px; 
-        text-align: left;
-    }
-    .image-frames2{
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px; 
-        text-align: left;
     }
     #banner{
         display:grid;
@@ -368,6 +358,12 @@ section{
         margin-left: 20px;
     }
     #banner-content p1{
+        font-size: 16px;
+    }
+    .box img{
+        width: 85%;
+    }
+    .box p1{
         font-size: 16px;
     }
 }

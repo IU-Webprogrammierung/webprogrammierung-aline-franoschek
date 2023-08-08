@@ -51,12 +51,17 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav .logo{
+#logo_name{
+    height: 80px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+}
+nav #logo{
     margin-left: 20px;
     width: 4.5rem;  
 }
-nav .name{
-    margin-left: 30px;
+nav #name{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     font-variant: small-caps;
@@ -126,7 +131,7 @@ button a{
     text-decoration: none;
     font-size: 18px;   
 }
-.row{
+#row{
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
@@ -145,17 +150,17 @@ button a{
 .row-box:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-.image-container{
+#image-container{
     display:flex;
     justify-content:space-between;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     margin-top: 35px
 }
-.image-frames{
+#image-frames{
     width: 50%;
 }
-.bodytext-container{
+#bodytext-container{
     font-size: large;
     margin-top: 8px;
     line-height: 30px;
@@ -163,12 +168,23 @@ button a{
     padding-left: 15px;
     color: #4b5450;
 }
-.footer{
+#footer{
     font-size: 15px;
     color: var(--darker-background-color);
     margin-bottom: 55px;
     margin-top: 55px;
     padding-left: 25px;
+    outline: thick ridge orangered;
+}
+@media(max-width: 1600px){
+    #image-container{
+       flex-direction: column;
+    }
+}
+@media(max-width: 1300px){
+    #row{
+        flex-direction: column;
+    }
 }
 @media(max-width: 1080px){
     .toggle-button{
@@ -193,7 +209,7 @@ button a{
         display: block;
         overflow: hidden;
     }
-    .row{
-        flex-direction: column;
+    #image-frames{
+        width: 100%;
     }
 }

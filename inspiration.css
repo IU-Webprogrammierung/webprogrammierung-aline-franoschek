@@ -4,6 +4,12 @@
     --accent-color: #8a988c;
     --text-color: #ffffff; 
 }
+.color_mode{
+    --background-color:#ce4e90;
+    --darker-background-color:#373737;
+    --accent-color:#f06e0a;
+    --text-color:#ffffff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -40,11 +46,17 @@ nav{
     justify-content:space-between;
     align-items: center;
 }
-nav .logo{
+#logo_name{
+    height: 80px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+}
+nav #logo{
     margin-left: 20px;
     width: 4.5rem;  
 }
-nav .name{
+nav #name{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     font-variant: small-caps;
@@ -93,40 +105,39 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
-.body-text{
+#body-text{
     padding-left: 60px;
     padding-right: 50px;
     line-height: 30px;
     font-size: 18px;
     color: var(--darker-background-color);
 }
-.slider-container{
+#slider-container{
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 80px;
     margin-bottom: 100px;
     width: 100%;
 }
-.slider-wrapper{
+#slider-wrapper{
     position: relative;
     max-width: 100%;
     margin: 0 auto;
 }
-.slider{
+#slider{
     display: flex;
-    aspect-ratio: 16 / 9;
     overflow: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
     border-radius: 0.5rem;
 }
-.slider img{
+#slider img{
     flex: 1 0 50%;
     scroll-snap-align: start;
     object-fit: cover;
 }
-.slider-nav{
+#slider-nav{
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -135,15 +146,8 @@ nav input[type="checkbox"]{
     transform: translateX(-50%);
     z-index: 1;
 }
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #ababab;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-.slider-nav a:hover{
+
+#slider-nav a:hover{
     opacity: 1;
 }
 #shade{
@@ -174,7 +178,7 @@ nav input[type="checkbox"]{
     font-size: 18px;
     color: var(--darker-background-color);
 }
-.body-text2{
+#body-text2{
     padding-left: 70px;
     padding-right:70px;
     margin-top: 30px;
@@ -214,7 +218,7 @@ nav input[type="checkbox"]{
 }
 .bodytext-container{
     font-size: large;
-    margin-top: 8px;
+    margin-top: 10px;
     line-height: 30px;
     padding-right: 25px;
     color: #4b5450;
@@ -222,7 +226,7 @@ nav input[type="checkbox"]{
 .text-container button{
     padding: 0.7rem 0.7rem;
     padding-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     outline: none;
     border: none;
     border-radius: 5px;
@@ -241,31 +245,17 @@ nav input[type="checkbox"]{
     font-size: 18px;   
 }
 
-.footer{
+#footer{
     font-size: 15px;
     color: var(--darker-background-color);
     margin-bottom: 55px;
     margin-top: 55px;
     padding-left: 25px;
+    outline: thick ridge orangered;
 }
-@media(max-width: 800px){
-    .image-container{
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px;
-        align-items: center;
-    }
-    .image-container2{
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px;
-        align-items: center;
-    }
-    .image-container3{
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px;
-        align-items: center;
+@media(max-width: 1300px){
+    #slider img{
+        width: 50%;
     }
 }
 @media(max-width: 1080px){
@@ -306,14 +296,23 @@ nav input[type="checkbox"]{
         opacity: 1.0
     }
 }
-@media(max-width: 1300px){
-    .slider img{
+@media(max-width: 800px){
+    .image-container{
         display:grid;
         grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
         min-width: 30px;
         align-items: center;
     }
-    .images-text{
-        margin-top: 0 auto;
+    .image-container2{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
+        min-width: 30px;
+        align-items: center;
+    }
+    .image-container3{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
+        min-width: 30px;
+        align-items: center;
     }
 }
