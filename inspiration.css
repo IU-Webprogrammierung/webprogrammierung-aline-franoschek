@@ -4,12 +4,6 @@
     --accent-color: #8a988c;
     --text-color: #ffffff; 
 }
-.color_mode{
-    --background-color:#ce4e90;
-    --darker-background-color:#373737;
-    --accent-color:#f06e0a;
-    --text-color:#ffffff;
-}
 *{
     margin: 0;
     padding: 0;

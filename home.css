@@ -353,7 +353,7 @@ section{
         
     }
 }
-@media(max-width: 610px){
+@media(max-width: 800px){
     #banner-content h2{
         margin-left: 20px;
     }
@@ -365,5 +365,8 @@ section{
     }
     .box p1{
         font-size: 16px;
+    }
+    .box img{
+        
     }
 }
