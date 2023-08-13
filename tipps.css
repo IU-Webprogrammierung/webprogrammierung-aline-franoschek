@@ -18,7 +18,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
-    background: var(--text-color)
+    background: var(--text-color);
+    padding-top: 80px;
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -39,7 +40,7 @@ h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     letter-spacing: 8px;
-    text-transform: uppercase;
+    text-transform:uppercase;
     -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.533));
     line-height: 0.70em;
     outline: none;
@@ -61,6 +62,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top:0;right:0;left:0;
 }
 #logo_name{
     height: 80px;

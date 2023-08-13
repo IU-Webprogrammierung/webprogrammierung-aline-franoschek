@@ -21,6 +21,7 @@ body{
     align-items: center;
     background: #f1f1f1;
     height: 100%;
+    padding-top: 80px;
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -39,6 +40,8 @@ nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    position: fixed;
+    top:0;right:0;left:0;
 }
 #logo_name{
     height: 80px;
@@ -247,9 +250,24 @@ nav input[type="checkbox"]{
     padding-left: 25px;
     outline: thick ridge orangered;
 }
-@media(max-width: 1300px){
-    #slider img{
-        width: 50%;
+@media(max-width: 800px){
+    .image-container{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
+        min-width: 30px;
+        align-items: center;
+    }
+    .image-container2{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
+        min-width: 30px;
+        align-items: center;
+    }
+    .image-container3{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
+        min-width: 30px;
+        align-items: center;
     }
 }
 @media(max-width: 1080px){
@@ -290,23 +308,8 @@ nav input[type="checkbox"]{
         opacity: 1.0
     }
 }
-@media(max-width: 800px){
-    .image-container{
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px;
-        align-items: center;
-    }
-    .image-container2{
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px;
-        align-items: center;
-    }
-    .image-container3{
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(1080px,1fr));
-        min-width: 30px;
-        align-items: center;
+@media(max-width: 1300px){
+    #slider img{
+        width: 50%;
     }
 }

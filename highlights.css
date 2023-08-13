@@ -21,6 +21,7 @@ body{
     align-items: center;
     background: #f1f1f1;
     height: 100%;
+    padding-top: 80px;
 }
 html{
     height: 100%;
@@ -31,6 +32,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top:0;right:0;left:0;
 }
 #logo_name{
     height: 80px;
@@ -156,15 +159,6 @@ p{
     margin-top: 55px;
     padding-left: 25px;
     outline: thick ridge orangered;
-}
-
-@media screen and (max-width: 500px){
-    .image-box{
-        flex: 50%;
-    }
-    .navigation{
-        position:relative;
-    }
 }
 @media(max-width: 1080px){
     .toggle-button{

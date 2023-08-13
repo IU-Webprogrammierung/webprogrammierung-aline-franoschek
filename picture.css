@@ -21,6 +21,7 @@ body{
     align-items: center;
     background: #ffffff;
     height: 100%;
+    padding-top: 80px;
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -50,6 +51,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top:0;right:0;left:0;
 }
 #logo_name{
     height: 80px;
@@ -176,16 +179,6 @@ button a{
     padding-left: 25px;
     outline: thick ridge orangered;
 }
-@media(max-width: 1600px){
-    #image-container{
-       flex-direction: column;
-    }
-}
-@media(max-width: 1300px){
-    #row{
-        flex-direction: column;
-    }
-}
 @media(max-width: 1080px){
     .toggle-button{
         display: flex;
@@ -211,5 +204,15 @@ button a{
     }
     #image-frames{
         width: 100%;
+    }
+}
+@media(max-width: 1300px){
+    #row{
+        flex-direction: column;
+    }
+}
+@media(max-width: 1600px){
+    #image-container{
+       flex-direction: column;
     }
 }
