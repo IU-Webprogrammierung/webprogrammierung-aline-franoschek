@@ -21,7 +21,6 @@ body{
     align-items: center;
     background: #f1f1f1;
     height: 100%;
-    padding-top: 80px;
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -34,14 +33,13 @@ h2{
 html{
     height: 100%;
 }
+/* Menüleiste */
 nav{
     height: 80px;
     background: var(--background-color);
     display: flex;
     justify-content:space-between;
     align-items: center;
-    position: fixed;
-    top:0;right:0;left:0;
 }
 #logo_name{
     height: 80px;
@@ -86,6 +84,7 @@ nav ul a{
 nav input[type="checkbox"]{
     display: none;
 }
+/* Hamburger-Menü bei der mobilen Version */
 .toggle-button{
     width: 30px;
     height: 23px;
@@ -102,6 +101,7 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
+/* Beginn Body-Bereich */
 #body-text{
     padding-left: 60px;
     padding-right: 50px;
@@ -109,6 +109,7 @@ nav input[type="checkbox"]{
     font-size: 18px;
     color: var(--darker-background-color);
 }
+/* Slider Container mit Bildern */
 #slider-container{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -147,6 +148,7 @@ nav input[type="checkbox"]{
 #slider-nav a:hover{
     opacity: 1;
 }
+/* Animation Hintergrund */
 #shade{
     animation: slide 3s ease-in-out infinite alternate;
     background: -webkit-linear-gradient(-75deg,  rgb(255, 255, 255) 50%, #4b5450 70%);
@@ -167,6 +169,15 @@ nav input[type="checkbox"]{
 #shade3{
     animation-duration: 5s;
 }
+@keyframes slide{
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+/* Text zu Slider Container */
 #images-text p{
     padding-left: 60px;
     padding-right: 50px;
@@ -175,6 +186,7 @@ nav input[type="checkbox"]{
     font-size: 18px;
     color: var(--darker-background-color);
 }
+/* Beginn Bereich: Tipps zur Gestaltung */
 #body-text2{
     padding-left: 70px;
     padding-right:70px;
@@ -183,14 +195,6 @@ nav input[type="checkbox"]{
     font-size: 18px;
     line-height: 30px;
     color: var(--darker-background-color);
-}
-@keyframes slide{
-    0% {
-        transform: translateX(10%);
-    }
-    100% {
-        transform: translateX(25%);
-    }
 }
 .image-container{
     display:flex;
@@ -241,14 +245,13 @@ nav input[type="checkbox"]{
     text-decoration: none;
     font-size: 18px;   
 }
-
 #footer{
     font-size: 15px;
     color: var(--darker-background-color);
     margin-bottom: 55px;
     margin-top: 55px;
     padding-left: 25px;
-    outline: thick ridge orangered;
+    outline: thin ridge rgb(255, 119, 0);
 }
 @media(max-width: 800px){
     .image-container{

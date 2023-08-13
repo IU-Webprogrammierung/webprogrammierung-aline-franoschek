@@ -21,7 +21,6 @@ body{
     align-items: center;
     background: #ffffff;
     height: 100%;
-    padding-top: 80px;
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,14 +44,13 @@ p{
 html{
     height: 100%;
 }
+/* Menüleiste */
 nav{
     height: 80px;
     background: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top:0;right:0;left:0;
 }
 #logo_name{
     height: 80px;
@@ -97,6 +95,7 @@ nav ul a{
 nav input[type="checkbox"]{
     display: none;
 }
+/* Hamburger-Menü bei der mobilen Version */
 .toggle-button{
     width: 30px;
     height: 23px;
@@ -113,6 +112,7 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
+/* "zurück" Button */
 button{
     padding: 0.7rem 1.3rem;
     padding-left: 30px;
@@ -139,6 +139,7 @@ button a{
     display: flex;
     justify-content: space-between;
 }
+/* drei Blöcke zu Bilderstilen */
 .row-box{
     flex-basis: 30%;
     background: #f1f1f1;
@@ -153,6 +154,7 @@ button a{
 .row-box:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
+/* unterer Container mit Bild und Text */
 #image-container{
     display:flex;
     justify-content:space-between;
@@ -177,7 +179,7 @@ button a{
     margin-bottom: 55px;
     margin-top: 55px;
     padding-left: 25px;
-    outline: thick ridge orangered;
+    outline: thin ridge rgb(255, 119, 0);
 }
 @media(max-width: 1080px){
     .toggle-button{

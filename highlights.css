@@ -21,19 +21,32 @@ body{
     align-items: center;
     background: #f1f1f1;
     height: 100%;
-    padding-top: 80px;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 100px;;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    font-size: 40px;
+    color: var(--background-color);
+}
+p{
+    padding-left: 60px;
+    padding-right: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--darker-background-color);
 }
 html{
     height: 100%;
 }
+/* Menüleiste */
 nav{
     height: 80px;
     background: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top:0;right:0;left:0;
 }
 #logo_name{
     height: 80px;
@@ -78,6 +91,7 @@ nav ul a{
 nav input[type="checkbox"]{
     display: none;
 }
+/* Hamburger-Menü bei der mobilen Version */
 .toggle-button{
     width: 30px;
     height: 23px;
@@ -94,21 +108,7 @@ nav input[type="checkbox"]{
     background: var(--text-color);
     border-radius: 100px;
 }
-h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 100px;;
-    margin-bottom: 60px;
-    padding-left: 50px;
-    font-size: 40px;
-    color: var(--background-color);
-}
-p{
-    padding-left: 60px;
-    padding-right: 50px;
-    line-height: 30px;
-    font-size: 18px;
-    color: var(--darker-background-color);
-}
+/* Beginn Bilderserie */
 .grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -150,15 +150,13 @@ p{
 .image-box:hover > .box-text.fade{
     opacity: 1;
 }
-
-
 #footer{
     font-size: 15px;
     color: var(--darker-background-color);
     margin-bottom: 55px;
     margin-top: 55px;
     padding-left: 25px;
-    outline: thick ridge orangered;
+    outline: thin ridge rgb(255, 119, 0);
 }
 @media(max-width: 1080px){
     .toggle-button{
